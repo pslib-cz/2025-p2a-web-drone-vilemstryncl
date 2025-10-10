@@ -3,13 +3,16 @@
 @import url(./normalize.css) layer(reset);
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap') layer(init);
+
+
+
 @layer design {
     :root{
         color-scheme: light dark;
         --header-bg-color: light-dark(#3B3E40, #3B3E40) ;
         --header-text-color: light-dark(#fff, #fff);
         --primary-color: light-dark(#66D4D4, #2B5A5A)  ;
-        --secondary-color:(#fff,#fff);
+        --secondary-color:light-dark(#fff,#fff);
         --text-color: light-dark(#000,#fff );
         --bg-color: light-dark(#fff,#000);
 
@@ -22,19 +25,63 @@
     body {
         background-color: var(--bg-color);
     }
+    main {
+       max-width: 960px;
+    }
+    h1 {
+        font-size: 4rem;
+        font-weight: extra-bold; 
+    }
+    .img-fluid{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
 .header {
     background-image: url("../images/header-2560w.webp");
     background-size: cover;
     background-position: top left;
     background-color: var(--header-bg-color);
     color: var(--header-text-color);
+    padding: 1em;
 }
 .header__nav {
     text-align: center;
 }
 .header__link {
-    display: inline-block;
-    padding-top: 1em;
+    
+    
 }
+    .header_intro {
+        margin-top: 10vh;
+    }
+    .button {
+        text-decoration: none;
+        border-radius: 9.5rem;
+        padding: 0.75em 2em;
+        
+    }
+    .button--light {
+        background-color: var(--secondary-color);
+        color: var(--text-color);
+    }
+    .img-block {
+        margin: 0;
+
+    }
+    .img-block_caption {
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+    .info-block-caption{
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+    .info-block{
+        margin: 0;
+        padding: 1.5rem;
+        border: 3px;
+    }
     
 }
